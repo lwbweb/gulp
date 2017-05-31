@@ -1,0 +1,1 @@
+function refreshCartProducts(){$.post("/cart/GetCartProducts",{},function(t){var r=(t.products,t.totalCount);$("#shopping-amount,#right_cart em").html(r)})}$(function(){refreshCartProducts()});
